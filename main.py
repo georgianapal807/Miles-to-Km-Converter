@@ -7,18 +7,14 @@ def convert():
 
 
 window = Tk()
-window.minsize(width=400, height=200)
 window.title("Mile to Km Converter")
-window.config(padx=50, pady=50)
-
-# Labels define
-null_label = Label()
-null_label.grid(column=0, row=0)
+window.config(padx=20, pady=20)
 
 # User Input box
-input_value = Entry(width=10)
+input_value = Entry(width=7)
 input_value.grid(column=1, row=0)
 
+# Labels define
 miles_label = Label(text="Miles")
 miles_label.grid(column=2, row=0)
 
@@ -31,6 +27,7 @@ converted_value_label.grid(column=1, row=1)
 Km_label = Label(text="Km")
 Km_label.grid(column=2, row=1)
 
+# Button define
 button = Button(text="Calculate", command=convert)
 button.grid(column=1, row=3)
 
